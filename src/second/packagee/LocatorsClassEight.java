@@ -9,21 +9,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-public class LocatorsClassFive {
+public class LocatorsClassEight {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\91992\\OneDrive\\Desktop\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\91992\\OneDrive\\Desktop\\chromedriver_win32 (1)\\chromedriver.exe");
 				
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
-		driver.get("https://www.facebook.com/");			
+		driver.get("https://demoqa.com/webtables");			
 		
-		driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input")).sendKeys("Xpath loacator");
-        driver.findElement(By.xpath("//form/div[1]/div[2]/div/input")).sendKeys("RelativeXpath");
-        
+	String firstName = driver.findElement(By.xpath("//div[contains(text(),'cierra@example.com')]/preceding-sibling::div[3]")).getText();
+	System.out.println(firstName);
+        String dept = driver.findElement(By.xpath("//div[contains(text(),'cierra@example.com')]/following-sibling::div[2]")).getText();
+        System.out.println(dept);
     
 	}
 

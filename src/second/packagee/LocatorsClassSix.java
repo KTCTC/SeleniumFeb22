@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-public class LocatorsClassFive {
+public class LocatorsClassSix {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -21,8 +21,10 @@ public class LocatorsClassFive {
 		
 		driver.get("https://www.facebook.com/");			
 		
-		driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input")).sendKeys("Xpath loacator");
-        driver.findElement(By.xpath("//form/div[1]/div[2]/div/input")).sendKeys("RelativeXpath");
+		driver.findElement(By.xpath("//*[@placeholder='Email address or phone number']")).sendKeys("Xpath loacator using attribute");
+       
+		String msg = driver.findElement(By.xpath("//*[contains(text(),'connect and share with')]")).getText();
+		System.out.println(msg);
         
     
 	}
