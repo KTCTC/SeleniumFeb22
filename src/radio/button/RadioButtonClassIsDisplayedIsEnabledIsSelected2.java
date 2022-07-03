@@ -12,7 +12,7 @@ public class RadioButtonClassIsDisplayedIsEnabledIsSelected2 {
 		
 		   WebDriver driver = new ChromeDriver();
 		   driver.manage().window().maximize();
-		   driver.get("https://demoqa.com/radio-button");   		   
+		   driver.get("https://demoqa.com/radio-button"); 		   
 		   
 		   driver.findElement(By.xpath("//*[@id='yesRadio']/following-sibling::label")).click();
 		   
