@@ -18,8 +18,7 @@ public class PromtAlertClass {
 		   driver.manage().window().maximize();
 		   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		   driver.get("https://demoqa.com/alerts");
-		   driver.findElement(By.id("promtButton")).click();
-		   
+		   driver.findElement(By.id("promtButton")).click();  
 		  
 		   
 		  Alert alt = driver.switchTo().alert();
