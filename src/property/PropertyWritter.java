@@ -12,11 +12,13 @@ public class PropertyWritter {
 		
 		File f = new File("C:\\Users\\91992\\Feb22\\SeleniumFeb22\\febprop.properties");
 		
-		FileOutputStream fos = new FileOutputStream(f);
+		//FileOutputStream fos = new FileOutputStream(f);
+		
+		FileOutputStream fos = new FileOutputStream(f, true);
 		
 		Properties propObj = new Properties();
 		
-		propObj.setProperty("Phone", "PQ");		
+		propObj.setProperty("Phone", "PQ234");		
 		
 		propObj.store(fos, "updated key values");
 		

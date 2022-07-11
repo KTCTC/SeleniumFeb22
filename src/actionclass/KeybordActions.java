@@ -25,6 +25,10 @@ public class KeybordActions {
 		  Actions act = new Actions(driver);
 		  
 		  act.click(emailbox).keyDown(Keys.SHIFT).sendKeys("welcome to ktctc").keyUp(Keys.SHIFT).perform();
+		  
+		  
+		  
+		  
 
 	}
 
