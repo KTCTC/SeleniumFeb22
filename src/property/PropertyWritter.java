@@ -20,7 +20,7 @@ public class PropertyWritter {
 		
 		propObj.setProperty("Phone", "PQ234");		
 		
-		propObj.store(fos, "updated key values");
+		propObj.store(fos, "\nupdated key values\n");
 		
 		System.out.println("file written successfully");
 		

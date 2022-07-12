@@ -25,7 +25,9 @@ public class NestedFrame {
 		   
 		   String msg = driver.findElement(By.xpath("//body/p")).getText();
 		   System.out.println(msg);
+		  
 		   driver.switchTo().parentFrame();
+		   
 		   
 		   driver.switchTo().defaultContent();
 		   
